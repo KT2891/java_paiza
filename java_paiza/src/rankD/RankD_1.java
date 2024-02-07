@@ -8,11 +8,11 @@ public class RankD_1 {
 		
 		int wordAmount = 10;
 		String words[] = new String[wordAmount];
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < wordAmount; i++) {
 			words[i] = sc.next();
 			System.out.println(words[i]);
 		}
+		
 		sc.close();
 	}
 }
-	
