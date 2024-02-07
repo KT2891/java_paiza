@@ -1,4 +1,4 @@
-package rankD;
+package rankD_input;
 
 public class RankD_03 {
 

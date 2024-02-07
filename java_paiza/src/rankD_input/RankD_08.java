@@ -1,4 +1,4 @@
-package rankD;
+package rankD_input;
 
 import java.util.Scanner;
 
