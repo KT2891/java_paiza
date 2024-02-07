@@ -1,6 +1,6 @@
 package rankD;
 
-public class RankD_2 {
+public class RankD_02 {
 
 	public static void main(String[] args) {
 		

@@ -2,20 +2,17 @@ package rankD;
 
 import java.util.Scanner;
 
-public class RankD_9 {
+public class RankD_05 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int wordCount = sc.nextInt();
-		String[] words = new String[wordCount];
-		
-		for(int i = 0; i < wordCount; i++)
-			words[i] = sc.next();
+		String input = sc.nextLine();
+		String[] words = input.split(" ");
 		
 		for(String t: words)
 			System.out.println(t);
-		
+				
 		sc.close();
 	}
 

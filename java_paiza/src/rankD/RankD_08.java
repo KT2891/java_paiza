@@ -2,7 +2,7 @@ package rankD;
 
 import java.util.Scanner;
 
-public class RankD_8 {
+public class RankD_08 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

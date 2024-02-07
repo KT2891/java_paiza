@@ -1,6 +1,6 @@
 package rankD;
 
-public class RankD_4 {
+public class RankD_04 {
 
 	public static void main(String[] args) {
 		String word = "one two three four five";
