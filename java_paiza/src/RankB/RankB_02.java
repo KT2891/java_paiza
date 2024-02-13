@@ -11,9 +11,8 @@ public class RankB_02 {
 		int col = sc.nextInt();
 		
 		int[][] chocolates = new int[low][col];
-		boolean[] isResults = {false, false, false};
-		boolean isResult = true;
 		String[][] result = new String[low][col];
+		boolean isResult = true;
 		
 		
 		for(int i = 0; i < low; i++)
@@ -22,31 +21,24 @@ public class RankB_02 {
 				result[i][j] = "B";
 			}
 		
-		int sumRight = 0;
-		int sumLeft = 0;
+
 		
 		for(int i = 0; i < low; i++) {
+			int sumRight = 0;
+			int sumLeft = 0;
+			boolean found = false;
 			for(int j = 0; j < col - 1; j++) {
-				sumRight += chocolates[i][j];
-				result[i][j] = "A";
-				for(int k = j + 1; k < col; k++) {
-					sumLeft += chocolates[i][k];
-				}
-				if(sumRight == sumLeft) {
-					isResults[i] = true;
-					break;
-				}
-				sumLeft = 0;
+        sumRight += chocolates[i][j];
+        sumLeft = 0;
+        for (int k = j + 1; k < col; k++) {
+          sumLeft += chocolates[i][k];
+        }
+        if (sumRight == sumLeft) {
+          for (int k = 0; k <= j; k++) result[i][k] = "A";
+          found = true;
+        }
 			}
-			sumLeft = 0;
-			sumRight = 0;
-		}
-		
-		for(boolean b : isResults) {
-			if(!b) {
-				isResult = false;
-				break;
-			}
+			if (!found) isResult = false; 
 		}
 		
 		if(isResult) {
