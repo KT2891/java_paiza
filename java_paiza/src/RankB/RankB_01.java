@@ -40,16 +40,10 @@ public class RankB_01 {
 		}
 		
 		for(int i = 0; i < lows*2 - 1; i++) {
-			for(int j = 0; j < cols*2 - 1; j++) {
-				if (j <= cols*2 - 1) {
-					System.out.print(result[i][j] + " ");
-				} else {
-					System.out.print(result[i][j]);
-				}
-			}
+			for(int j = 0; j < cols*2 - 1; j++)
+				System.out.print(result[i][j] + (j < cols * 2 - 2 ? " " : ""));
 			System.out.println();
 		}
-		
 		sc.close();
 	}
 }
