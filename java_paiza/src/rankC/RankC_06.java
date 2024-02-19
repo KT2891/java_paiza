@@ -17,23 +17,23 @@ public class RankC_06 {
 				sc.nextInt(),
 		};
 		int lotCount = sc.nextInt();
-		int[][] lottleys = new int[lotCount][lotNum];
-		int hitCount = 0;
+		int[][] lotteries = new int[lotCount][lotNum];
+		
 		
 		for(int i = 0; i < lotCount; i++)
 			for(int j = 0; j < lotNum; j++)
-				lottleys[i][j] = sc.nextInt();
+				lotteries[i][j] = sc.nextInt();
 		
 		for(int i = 0; i < lotCount; i++) {
+			int hitCount = 0;
 			for(int j = 0; j < lotNum; j++) {
 				for(int k = 0; k < lotNum; k++) {
-					if (lottleys[i][j] == targetNum[k]) {
+					if (lotteries[i][j] == targetNum[k]) {
 						hitCount ++;
 					}
 				}
 			}
 			System.out.println(hitCount);
-			hitCount = 0;
 		}
 		
 		sc.close();
